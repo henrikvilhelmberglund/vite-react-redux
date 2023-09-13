@@ -6,8 +6,12 @@ export default function Header() {
   const name = useSelector((store) => store.todo.name);
   return (
     <>
-      <h2>{name} Todo-List</h2>
-      <input type="text" onChange={(e) => dispatch(setName(e.target.value))} />
+      <h2>{name}'s Todo-List</h2>
+      <div className="flex flex-col items-center m-4">
+        
+      <label htmlFor="name">Enter your name</label>
+      <input className="p-2" type="text" id="name" onChange={(e) => dispatch(setName(e.target.value))} />
+      </div>
       <button onClick={() => dispatch(toggleDarkMode())}>Toggle dark mode</button>
     </>
   );

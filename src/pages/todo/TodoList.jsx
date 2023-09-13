@@ -6,7 +6,7 @@ export default function TodoList() {
   const todos = useSelector((store) => store.todo.todos);
   return (
     <>
-      <div className="bg-blue-200 dark:bg-blue-900 rounded-md p-2 dark:text-white flex gap-4 flex-col items-center">
+      <div className="bg-blue-200 dark:bg-blue-900 rounded-md p-2 dark:text-white w-[50%] flex gap-4 flex-col items-center">
         <button onClick={() => dispatch(toggleDarkMode())}>Toggle dark mode</button>
 
         <div>
