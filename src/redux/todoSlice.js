@@ -44,6 +44,9 @@ const todoSlice = createSlice({
     addTodo: (state, action) => {
       state.todos = [...state.todos, action.payload];
     },
+    editTodo: (state, action) => {
+      state.todos[action.payload[0]] = action.payload[1];
+    },
     toggleDarkMode: (state) => {
       state.darkMode = !state.darkMode;
       if (state.darkMode === true) {
@@ -55,6 +58,6 @@ const todoSlice = createSlice({
   },
 });
 
-export const { setName, deleteTodo, addTodo, toggleDarkMode } = todoSlice.actions;
+export const { setName, deleteTodo, addTodo, toggleDarkMode, editTodo } = todoSlice.actions;
 
 export default todoSlice.reducer;
