@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setName, toggleDarkMode } from "./redux/todoSlice";
+import { setName, toggleDarkMode } from "../../redux/todoSlice";
 
 export default function Header() {
   const dispatch = useDispatch();

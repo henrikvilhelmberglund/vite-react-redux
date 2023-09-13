@@ -7,8 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { routes } from "generouted/react-router";
 import { Provider } from "react-redux";
 
-// import store from "./redux/configureStore";
-import store from "./pages/todo/redux/configureStore";
+import store from "./redux/configureStore";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

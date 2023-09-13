@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { deleteTodo, addTodo, toggleDarkMode } from "./redux/todoSlice";
+import { deleteTodo, addTodo, toggleDarkMode } from "../../redux/todoSlice";
 
 export default function TodoList() {
   const dispatch = useDispatch();
