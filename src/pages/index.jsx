@@ -11,6 +11,7 @@ export default function Home() {
         <Link to="/cool-route">Cool route here</Link>
         <Link to="/todo">Todo List Redux</Link>
         <Link to="/api">API Redux</Link>
+        <Link to="/boredapi">Exercise: Bored API Redux</Link>
       </nav>
       <Counter />
     </div>

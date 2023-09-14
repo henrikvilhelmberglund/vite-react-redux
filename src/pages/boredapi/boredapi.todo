@@ -1,0 +1,13 @@
+API: http://www.boredapi.com/
+
+Beskrivning: 
+
+✔ Sätt upp en Redux provider och store. @done(23-09-14 10:07)
+
+✔ Skapa ett inputfält där användare kan välja antal deltagare för en aktivitet. @done(23-09-14 10:07)
+
+✔ Hämta data med hjälp av Redux Toolkit och Thunk. @done(23-09-14 10:15)
+
+✔ Skapa en knapp som hämtar en slumpvald aktivitet baserat på hur många deltagare man är. Information om aktiviteten ska visas ut i en egen komponent t.ex <Activity/> @done(23-09-14 10:30)
+
+✔ Extra: Skapa ytterligare möjligheter för filtrering: T.ex antal deltagare, typ av aktivitet, endast gratisaktiviteter etc. @done(23-09-14 10:51)
