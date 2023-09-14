@@ -10,6 +10,7 @@ export default function Home() {
       <nav className="flex flex-col gap-8">
         <Link to="/cool-route">Cool route here</Link>
         <Link to="/todo">Todo List Redux</Link>
+        <Link to="/api">API Redux</Link>
       </nav>
       <Counter />
     </div>
