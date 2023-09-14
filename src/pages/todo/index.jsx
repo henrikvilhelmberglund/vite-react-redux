@@ -1,5 +1,5 @@
-import Header from "./Header";
-import TodoList from "./TodoList";
+import Header from "./components/Header";
+import TodoList from "./components/TodoList";
 
 export default function Index() {
   return (

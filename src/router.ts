@@ -5,10 +5,9 @@ import { components, hooks, utils } from '@generouted/react-router/client'
 
 export type Path =
   | `/`
+  | `/api`
   | `/cool-route`
   | `/todo`
-  | `/todo/Header`
-  | `/todo/TodoList`
 
 export type Params = {
   
