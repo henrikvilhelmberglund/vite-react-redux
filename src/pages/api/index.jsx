@@ -10,8 +10,8 @@ export default function Index() {
       <button onClick={() => dispatch(getPosts())}>getPosts</button>
       <h1>Status: {status}</h1>
       <ul>
-        {posts.map(({ userId, title, body }) => (
-          <li>
+        {posts.map(({ userId, title, body }, i) => (
+          <li key={i}>
             {title}: {body}
           </li>
         ))}

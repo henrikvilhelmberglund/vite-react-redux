@@ -15,17 +15,18 @@ const postSlice = createSlice({
       return null;
     },
   },
-  extraReducers: {
-    [getPosts.pending]: (state, action) => {
-      state.status = "Loading...";
-    },
-    [getPosts.fulfilled]: (state, action) => {
-      state.status = "Success!";
-      state.posts = action.payload;
-    },
-    [getPosts.rejected]: (state, action) => {
-      state.status = "Rejected";
-    },
+  extraReducers: (builder) => {
+    builder
+      .addCase(getPosts.pending, (state) => {
+        state.status = "Loading...";
+      })
+      .addCase(getPosts.fulfilled, (state, action) => {
+        state.status = "Success!";
+        state.posts = action.payload;
+      })
+      .addCase(getPosts.rejected, (state) => {
+        state.status = "Rejected";
+      });
   },
 });
 
