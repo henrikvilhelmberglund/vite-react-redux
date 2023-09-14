@@ -26,5 +26,7 @@ export default function Activity({ activity, type, participants, price }) {
       </p>
       <p>{mapRange(price, 0, 1, 0, 350)}$</p>
     </article>
-  ) : null;
+  ) : (
+    <h2>No activity was found. Try again!</h2>
+  );
 }
